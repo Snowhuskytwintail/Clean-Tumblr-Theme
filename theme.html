@@ -1,0 +1,477 @@
+<html>
+    <head>
+        <title>{Title}</title>
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Electrolize');
+            *{
+                font-family: 'Electrolize', sans-serif;
+            }
+            body{
+                background: #E08283;
+                color: #FFF;
+                margin:0;
+            }
+            .header {
+                background-color: #F62459;
+                padding: 10px;
+                text-align: center;
+            }
+            .content{
+                text-align:center;
+            }
+            ol#posts{
+                padding:0;
+                -webkit-padding-start: 0;
+            }
+            li.post, .post {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0px;
+                background: #FFF;
+                border: 1px solid #ddd;
+                list-style: none;
+                color: #000;
+                text-align:left;
+            }
+            .post.photo{
+                
+            }
+            .post.photo img{
+                min-width:520px;
+                text-align:center;
+            }
+            blockqoute{
+                margin: 0;
+                margin-left: -40px;
+            }
+            figure.tmblr-full {
+                margin: 0;
+                margin-left: -40px;
+            }
+            #footer {
+                background-color: #FFF;
+                line-height: 30px;
+                text-align: center;
+                position: fixed;
+                right: 0;
+                top: 50px;
+                width: 90px;
+                padding: 5px 10px;
+                /* border-radius: 30px 0 0 30px; */
+                box-shadow: 0px 0px 4px #454545;
+            }
+            .header-img{
+                background-image: url(https://68.media.tumblr.com/a7533424f07d5413612893de9dee7045/tumblr_oh0lvdm5U81rlh8djo10_1280.jpg);
+                height: 400px;
+                background-size: cover;
+            }
+            @media (min-width: 1160px){
+                .header-img {
+                    height: 30em;
+                }
+            }
+            .like_and_reblog_buttons {
+                border: 1px solid #e8e8e8;
+                border-radius: 3px;
+                list-style: none;
+            }
+
+            .like_and_reblog_buttons li {
+                margin: 0;
+                padding: 7px 15px;
+            }
+
+            .like_and_reblog_buttons li:first-child {
+                border-right: 1px solid #e8e8e8;
+            }
+            a {
+                background-color: rgba(255, 255, 255, 0.69);
+                color: #5a3b38;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .site-description{
+                background-color: rgba(255, 255, 255, 0.69);
+                color: #5a3b38;
+            }
+            .header a{
+                color: #FFF;
+            }
+            a:hover{
+                text-decoration:underline;
+            }
+            @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,700);
+
+body{
+    background:#e9eaed;
+	}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans Condensed', sans-serif, sans-serif;
+}
+
+.container{
+	}
+
+.wrapper{
+	}
+
+#header{
+	border:1px solid #ddd;
+	margin-bottom:20px;
+	}
+
+
+
+
+.navbar{
+	border-radius:0;
+	margin-bottom:0;
+	border:none;
+        font-family: 'Open Sans Condensed', sans-serif, sans-serif;
+
+	}
+
+.navbar > li >a{
+
+    }
+
+
+
+.navbar-header{
+	}
+
+.navbar-brand{
+width:160px;
+height:160px;
+float:left;
+padding:0;
+margin-top:-130px;
+overflow:hidden;
+border:3px solid #eee;
+margin-left:15px;
+background:#333;
+text-align:center;
+line-height:160px;
+color:#fff !important;
+font-size:2em;
+    -webkit-transition:  all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition:  all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out ;
+
+	}
+
+
+.site-name{
+	color:#fff;
+	font-size:2.4em;
+	float:left;
+	margin-top:-65px !important;
+	margin-left:15px;
+        font-family: 'Open Sans Condensed', sans-serif, sans-serif;
+
+	}
+.site-description{
+	color:#fff;
+	font-size:1.3em;
+	float:left;
+	margin-top:-30px !important;
+	margin-left:15px;
+	}
+
+.main-menu{
+	position:absolute;
+	left:190px;
+	}
+
+.slider, .carousel{
+	max-height:360px;
+	overflow:hidden;
+	}
+
+.carousel-control .fa-angle-left,
+.carousel-control .fa-angle-right {
+position: absolute;
+top: 50%;
+font-size:2em;
+z-index: 5;
+display: inline-block;
+}
+
+.carousel-control{
+	background-color:transparent;
+	background-image:none !important;
+	}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color:transparent !important;
+  background-image:none !important;
+  outline: 0;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+.navbar-brand{
+    max-width: 100px;
+	max-height:100px;
+	float:left;
+	margin-top:-65px;
+	margin-left:15px;
+	-webkit-transition:  all 0.3s ease-in-out;
+  	-moz-transition: all 0.3s ease-in-out;
+  	-o-transition:  all 0.3s ease-in-out;
+  	transition: all 0.3s ease-in-out ;
+  }
+
+
+
+.carousel-inner .item.active img{
+    min-width:100%;
+}
+
+.navbar{
+	border-radius:0;
+	margin-bottom:0;
+	border:none;
+	}
+
+.main-menu{
+	left:0;
+	position:relative;
+	}
+
+
+}
+
+@media (max-width: 490px) {
+	.site-name{
+	color:#fff;
+	font-size:1.5em;
+	float:left;
+	line-height:20px;
+	margin-top:-100px !important;
+	margin-left:125px;
+	}
+.site-description{
+	color:#fff;
+	font-size:1.3em;
+	float:left;
+	margin-top:-80px !important;
+	margin-left:125px;
+	}
+	}
+
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <header id="header">
+
+          <div class="slider">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <!-- HEADER IMG -->
+                    <img src="CUSTOM HEADer">
+                  </div>
+                  <div class="item">
+                    <!-- Header IMG -->
+                    <img src="CUSTOM HEADer" style="max-height:420px">
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="fa fa-angle-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="fa fa-angle-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+          	</div><!--slider-->
+          	<nav class="navbar navbar-default">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <!-- avatar URL -->
+                    <a class="navbar-brand" href="#"><img class="img-responsive" src="http://api.tumblr.com/v2/blog/{YOUR BLOG URL}/avatar/512"></a>
+                    <span class="site-name"><a href="/">{Title}</a></span>
+
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="mainNav" >
+                    <ul class="nav main-menu navbar-nav">
+                      <li><a href="/"><i class="fa fa-home"></i> HOME</a></li>
+                      <li><a href="#">Themes</a></li>
+                      <li><a href="#">Something Else</a></li>
+                    </ul>
+
+                     <ul class="nav  navbar-nav navbar-right">
+                      <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+    					</nav>
+            </header><!--/#HEADER-->
+          </div>
+        </div>
+        <div class="content">
+            <div class="post">
+             <p id="description">{Description}</p>
+            </div>
+            <ol id="posts">
+                {block:Posts}{block:Text}
+                        <li class="post text">
+                            {block:Title}
+                                <h3><a href="{Permalink}">{Title}</a></h3>
+                            {/block:Title}{Body}
+
+                            <ul class="like_and_reblog_buttons">
+                                  <li><a href="{ReblogURL}">Spread it!!</a></li>
+                              </ul>
+                        </li>
+                    {/block:Text}
+                    {block:Photo}
+                        <li class="post photo">
+                            <center>
+                                <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+                            </center>
+                            {block:Caption}
+                                <div class="caption">{Caption}</div>
+                            {/block:Caption}
+                            <ul class="like_and_reblog_buttons">
+                                  <li><a href="{ReblogURL}">Spread it!!</a></li>
+                              </ul>
+                        </li>
+                    {/block:Photo}{block:Panorama}
+                        <li class="post panorama">
+                            {LinkOpenTag}
+                                <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                            {LinkCloseTag}{block:Caption}
+                                <div class="caption">{Caption}</div>
+                            {/block:Caption}
+                            <ul class="like_and_reblog_buttons">
+                                  <li><a href="{ReblogURL}">Spread it!!</a></li>
+                              </ul>
+                        </li>
+                    {/block:Panorama}
+                    {block:Photoset}
+                        <li class="post photoset">
+                            <center>{Photoset-500}</center>
+                            
+                            {block:Caption}
+                                <div class="caption">{Caption}</div>
+                            {/block:Caption}
+                            <ul class="like_and_reblog_buttons">
+                                  <li><a href="{ReblogURL}">Spread it!!</a></li>
+                              </ul>
+                        </li>
+                    {/block:Photoset}
+                    {block:Quote}
+                        <li class="post quote">
+                            "{Quote}"
+
+                            {block:Source}
+                                <div class="source">{Source}</div>
+                            {/block:Source}
+                            <ul class="like_and_reblog_buttons">
+                                  <li><a href="{ReblogURL}">Spread it!!</a></li>
+                              </ul>
+                        </li>
+                    {/block:Quote}
+                    {block:Link}
+                        <li class="post link">
+                            <a href="{URL}" class="link" {Target}>{Name}</a>
+
+                            {block:Description}
+                                <div class="description">{Description}</div>
+                            {/block:Description}
+                            <ul class="like_and_reblog_buttons">
+                                  <li><a href="{ReblogURL}">Spread it!!</a></li>
+                              </ul>
+                        </li>
+                    {/block:Link}
+                    {block:Chat}
+                        <li class="post chat">
+                            {block:Title}
+                                <h3><a href="{Permalink}">{Title}</a></h3>
+                            {/block:Title}
+
+                            <ul class="chat">
+                                {block:Lines}
+                                    <li class="{Alt} user_{UserNumber}">
+                                        {block:Label}
+                                            <span class="label">{Label}</span>
+                                        {/block:Label}{Line}
+                                    </li>
+                                {/block:Lines}
+                            </ul>
+                            <ul class="like_and_reblog_buttons">
+                                  <li><a href="{ReblogURL}">Spread it!!</a></li>
+                              </ul>
+                        </li>
+                    {/block:Chat}{block:Video}
+                        <li class="post video">
+                            {Video-500}{block:Caption}
+                                <div class="caption">{Caption}</div>
+                            {/block:Caption}
+                            <ul class="like_and_reblog_buttons">
+                                  <li><a href="{ReblogURL}">Spread it!!</a></li>
+                              </ul>
+                        </li>
+                    {/block:Video}{block:Audio}
+                        <li class="post audio">
+                            {AudioEmbed}{block:Caption}
+                                <div class="caption">{Caption}</div>
+                            {/block:Caption}
+                            <ul class="like_and_reblog_buttons">
+                                  <li><a href="{ReblogURL}">Spread it!!</a></li>
+                              </ul>
+                        </li>
+                    {/block:Audio}
+                {/block:Posts}
+            </ol>
+        </div>
+        <div id="footer">
+            {block:PreviousPage}
+                <a href="{PreviousPage}">&#171; Previous</a><br/>
+            {/block:PreviousPage}{block:NextPage}
+                <a href="{NextPage}">Next &#187;</a><br/>
+            {/block:NextPage}
+
+            <a href="/archive">Archive</a>
+        </div>
+          </div>
+        </div>
+    </body>
+</html>
